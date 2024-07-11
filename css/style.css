@@ -1,0 +1,13 @@
+article{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+h1.n1{
+    font-weight: bolder;
+
+    color:rgb(176, 31, 31)
+}
+h1.n2{
+    font-weight: bold;
+    color: #19bc24;
+}
