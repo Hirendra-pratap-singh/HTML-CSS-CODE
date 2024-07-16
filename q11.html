@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('./img/pexels-krisof-1252890.jpg');
+            background-size: cover;
+        }
+        .sun{
+            width: 100px;
+            height: 100px;
+            position: relative;
+           
+            border-radius: 100px;
+            background-image: url('./img/sun.jpg');
+            background-size: cover;
+            margin: 250px auto;
+        }
+        .c{
+              
+           
+             animation-duration: 0.5s;
+             animation-iteration-count: infinite;
+             animation-timing-function:linear;
+
+        }
+        .earth{
+            width: 100px;
+            height: 100px;
+            border-radius: 120px;
+            background-image: url('./img/earth-removebg-preview.png');
+          
+            background-position: center;
+            position: absolute;
+            top:250px;
+            left: 0px;
+            animation-name: earth;  
+        }
+        .mars{
+            width: 100px;
+            height: 100px;
+            border-radius: 120px;
+            background-image: url('./img/mars-removebg-preview.png');
+            background-size: cover;
+            position: absolute;
+            top:60px;
+            right: 1000px;
+            animation-name: mars;
+           
+        }
+        .satorn{
+            width: 100px;
+            height: 100px;
+            border-radius: 120px;
+            background-image: url('./img/satorn.jpg');
+            background-position: center;
+            bottom: 20px;
+            right: 600px;
+            position: absolute;
+            animation-name: satorn;
+            
+
+        }
+        .jupitor{
+            width: 100px;
+            height: 100px;
+            border-radius: 120px;
+            background-image: url('./img/jupitor-removebg-preview.png');
+            position: absolute;
+            background-position: center;
+            bottom: 100px;
+            right: 90px;
+            animation-name: jupitor;
+           
+            transform-origin: -290px center;
+        }
+        @keyframes earth{
+            
+            0%{
+               transform: rotateZ(0deg);
+            }100%{
+              transform: rotateZ(359deg);
+            }
+        }
+        @keyframes mars {
+            0%{
+              transform: rotateZ(0deg);
+            }100%{
+                transform: rotateZ(359deg);
+
+            }
+            
+        }
+        @keyframes satorn {
+            0%{
+                
+                transform: rotateZ(0deg);
+            }100%{
+              
+                transform: rotateZ(359deg);
+            }
+            
+        }
+        @keyframes jupitor {
+            0%{
+              
+                transform: rotateZ(0deg);
+            }100%{
+                
+                transform: rotateZ(359deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    
+<div class="sun c" ></div>
+<div class="earth c"></div>
+<div class="mars c"></div>
+<div class="satorn c"></div>
+<div class="jupitor c"></div>
+</body>
+</html>

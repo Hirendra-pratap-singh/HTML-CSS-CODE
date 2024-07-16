@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .b{
+         
+            width: 170px;
+            height: 170px;
+            border-radius: 200px;
+            display: inline-block;
+            animation-name: xyz;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-duration:1s;
+            animation-direction: alternate;
+
+        }
+        @keyframes xyz {
+
+           0%{
+            transform: translateY(0px);
+            
+           }100%{
+            transform: translateY(500px);
+           
+           }
+        }
+
+        .b1{
+            animation-delay: 0s; 
+            background-color: red;
+        }
+        .b2{
+            background-color: blue;
+            animation-delay: 0.1s;
+        }
+        .b3{
+            background-color: brown;
+            animation-delay: 0.2s;
+        }
+        .b4{
+            background-color: chartreuse;
+            animation-delay: 0.3s;
+        }
+        .b5{
+            background-color: chocolate;
+            animation-delay: 0.4s;
+        }
+        .b6{
+            background-color: aqua;
+            animation-delay: 0.5s;
+        }
+        .b7{
+            background-color: darkorchid;
+            animation-delay: 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <div class="b b1"></div>
+    <div class="b b2"></div>
+    <div class="b b3"></div>
+    <div class="b b4"></div>
+    <div class="b b5"></div>
+    <div class="b b6"></div>
+    <div class="b b7"></div>
+</body>
+</html>

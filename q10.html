@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 135px;
+            height: 150px;
+            margin: 30px auto;
+            background-image: url('./img/twitter.png');
+            animation-name: bird;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            background-image: url('./img/th.jpg');
+            animation-name: bird2;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            background-repeat: no-repeat;
+        }
+        @keyframes bird {
+
+              0%{
+                   background-position: 0px 0px;
+
+              }100%{
+                        
+                background-position: -450px 0px;
+              }
+              
+              /* 100%{
+                
+                background-position: 300px 0px;
+
+              } */
+
+            
+        }
+        @keyframes bird2 {
+            
+            0%{
+                background-position: 0px 0px;
+            }100%{
+                background-position:-450px ;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+     <div class="box1">
+
+     </div>
+     <div class="box2">
+
+     </div>
+</body>
+</html>
