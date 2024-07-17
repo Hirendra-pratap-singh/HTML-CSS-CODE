@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .myform{
+            width: 520px;
+            height: 445px;
+            border-radius: 5px;
+            margin: 150px auto;
+            /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...);  */
+            font-family: Arial, Helvetica, sans-serif;
+            background-image:-webkit-linear-gradient(top,#3b3b3b,#373737);
+        }
+        .myform>div{
+            height: 70px;
+            text-shadow: 0px -2px 1px rgba(0,0,0,0.5) ;
+            line-height: 77px;
+            text-align:center;
+            border-bottom: 1px solid #1b1b1b;
+            color: white;
+            font-size:2em;
+            margin-bottom: 41px;
+            /* background-color: red; */
+        }
+        .myform>.box>input{
+            display: block;
+            width: 90%;
+            /* width:475px; */
+            padding-left: 43px;
+            height: 38px;
+            border-radius: 20px;
+            margin: 12px auto;
+            background-image: -webkit-linear-gradient(top,#b1b1b1,#d7d7d7);
+            box-shadow: 0px 2px 2px 2px #5b595a;
+        }
+        .c1{
+            font-size: 16px !important;
+            text-align: left;
+            color:white;
+            margin-top:-31px !important;
+           
+        }
+        div.box{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .c1>.q1,.q2{
+            color: #44c744;
+        }
+        input[type="submit"]{
+            display: block;
+            width: 250px;
+            height: 48px;
+            float:right;
+            margin-top:148px;
+            border-radius: 20px;
+           background-image:-webkit-linear-gradient(top,#909419,#717c00);
+            color: white;
+            font-size: 1em;
+            margin-right:20px;
+            text-shadow: 0px -2px 1px rgba(0,0,0,0.5) ;
+            box-shadow: 0px -1px 0px 0px #b4bd2c;
+            
+        }
+        .box input:first-child{
+            background-image: url("img/user.png");
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: cover;
+            border-radius: 20px;
+        }
+        .box input:nth-child(2){
+            background-color:url('./img/hide.png');
+            background-repeat: no-repeat;
+            background-position: 40px center;
+            background-size: cover;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form class="myform">
+        <div>Create An Account</div>
+        <div class="box">
+            
+        <input type="text" name="name" placeholder="name">
+        <input type="number" name="no" placeholder="number">
+        <input type="email" name="email" placeholder="email">
+        <input type="password" name="pass" placeholder="password">
+        <p class="c1"><input type="checkbox" name="tnc" value="agree"> I am agree to the <a href="#" class="q1">terms and condition </a> and<a href="#" class="q2">privcy policy</a></p>
+    </div>
+    <input type="submit" name="submit" value="Create Account">
+    </form>
+
+</body>
+</html>

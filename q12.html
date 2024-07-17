@@ -9,6 +9,7 @@
         .common{
             width: 260px;
             height: 212px;
+            
         }
         .box{
            
@@ -20,6 +21,8 @@
             /* margin:250px auto; */
             position: relative;
             overflow: hidden;
+            float: left;
+            margin: 12px;
         }
         .overlay{
             
@@ -33,6 +36,15 @@
             transition-timing-function:ease-out;
             
 
+        }
+        .overlay-5{
+
+            top: 0px;
+            opacity: 0;
+            transition-duration: 0.7s;
+        }
+        .box:hover> .overlay-5{
+            opacity: 1;
         }
         .box:hover .overlay{
             top: 0px;
@@ -52,6 +64,22 @@
         .anchore{
             left: 140px !important;
         }
+        .a5_1{
+            left:40px !important;
+        }
+        .a5_2{
+            left: 180px !important;
+        }
+        .box:hover> .overlay-5 .a5_1{
+            left: 90px !important;
+        }
+        .box:hover> .overlay-5 .a5_2{
+            left: 140px !important;
+        }
+        .a5_1,.a5_2{
+
+            transition: all linear 0.1s;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +87,12 @@
         <div class="common overlay">
             <a href="#"><i class="fa-solid fa-link"></i></a>
             <a class="anchore" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </div>
+    <div class="common box">
+        <div class="common overlay overlay-5">
+            <a href="#" class="a5_1"><i class="fa-solid fa-link"></i></a>
+            <a class="anchore a5_2" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
     </div>
 </body>
