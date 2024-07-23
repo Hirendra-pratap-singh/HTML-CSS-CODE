@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+          body{
+            background-color: aqua;
+          }
+       .birds{
+        width: 73px;
+         height: 220px;
+          margin: auto;       
+        background-image: url('./img/birds-removebg-preview.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation-name: birds;
+        animation-duration: 2s;
+        animation-timing-function: steps(9);
+        animation-iteration-count: infinite;
+        position: relative;
+        /* transform: rotateZ(180deg); */
+    
+
+       }
+       .gobird{
+        position: relative;
+        animation-name: birdsg;
+        animation-duration: 2s;
+        animation-timing-function:linear;
+        animation-iteration-count:infinite;
+      
+       }
+       @keyframes birds {
+
+        0%{
+            
+            background-position:0px  0px ;
+            left: -50%;
+        }
+        100%{
+            background-position: -813px 0px;
+            left: 100%;
+        }
+       }
+       @keyframes birdsg {
+
+0%{
+   left: 0%;
+}
+100%{
+   left: 100%;
+}
+}
+    </style>
+</head>
+<body>
+    <div class="gobird">
+
+    <div class="birds">
+
+        
+
+    </div>
+    </div>
+</body>
+</html>
